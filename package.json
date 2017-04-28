@@ -1,5 +1,5 @@
 {
-  "name": "reduxDemo",
+  "name": "react-redux",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "node devServer.js",
     "update": "npm update dragon-mobile-ui",
-    "build": "rm -rf miAssets && webpack --config webpack.config.prd.js"
+    "build": "rm -rf assets && webpack --config webpack.config.prd.js"
   },
   "dependencies": {
     "compression": "^1.6.2",
