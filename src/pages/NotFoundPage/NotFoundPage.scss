@@ -1,0 +1,9 @@
+@import 'src/style/index';
+
+.error-tips{
+  width: r(266);
+  height: r(244);
+  background: url(./images/notFound.jpg) center center no-repeat;
+  background-size: cover;
+  margin: r(85) auto 0;
+}

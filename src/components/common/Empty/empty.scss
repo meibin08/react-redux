@@ -1,0 +1,16 @@
+@import "src/style/index";
+
+.empty{
+  padding:r(50) 0 r(20);
+  text-align:center;
+  .tips-img{
+    width:r(80);
+    min-height:r(82);
+    margin:0 auto;
+  }
+  .tips-txt{
+    padding:r(5) 0 0;
+    font-size:r(13);
+    color:#BCBFC7;
+  }
+}

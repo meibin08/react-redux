@@ -1,0 +1,108 @@
+@import "src/style/index";
+
+@-webkit-keyframes rotate{
+    to{
+        -webkit-transform: rotateZ(360deg);
+    };
+}
+.app-container{background-color: rgb(243, 242, 247);}
+.i-introduction{
+    padding:0 0 r(30);
+	.hd{
+        height:r(122.5);
+        background-color: #117d90;
+        padding-left:r(36);
+        display:flex;
+        display:-webkit-flex;
+        display:box;
+        display:-webkit-box;
+        overflow:hidden;
+        .message{
+            margin:r(30) r(24) 0 0;
+            width:r(201.5);
+            height:r(71);
+            line-height:r(22);
+            font-size:r(16.4);
+            padding:r(7) 0 0 r(21.5);
+            @include images($url:'./images/frame.png',$size:(r(201.5) r(71)));
+            color:#fff;
+        }
+        .logo{
+            margin:r(20) 0 0;
+            border-radius:50%;
+            border:r(2) solid #fff;
+            width:r(79);
+            height:r(79);
+            box-shadow:0 0 r(12) #d2cbcb;
+            -webkit-animation:rotate 15s linear infinite;
+            img{
+                width:r(75);
+                height:r(75);
+                border-radius:50%;
+            }
+        }
+    }
+    .list{
+        &:not(:last-child){
+            margin:0 0 r(10);
+        }
+        background-color:#fff;
+        padding:0 r(17);
+        .tit{
+            line-height:r(40);
+            color:#b0b5bd;
+            font-size:r(15);
+            font-weight:normal;
+            @include borderBottom($color:#e7e9ec);
+        }
+        .faq-row{
+            &:not(:last-child){
+                padding-bottom:r(1);
+                @include borderBottom($color:#e7e9ec);
+            }
+            &.active{
+                .ui-cell-footer::after{
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+                .row-list{
+                    display:block;
+                }
+            }
+            .contact-svg{
+                width:r(23.5);
+                height:r(24.5);
+            }
+            .ui-cell-inner{
+                min-height:r(50);
+                padding: 0.48833rem 0.115rem;
+                .ui-cell-title{
+                    font-size: r(17);
+                    color:#1d1d1e;
+                }
+                .ui-cell-icon{
+                 line-height:100%;
+                }
+                .ui-cell-footer::after{-webkit-transition:-webkit-transform .2s ;
+                    transition:transform .2s ;}
+            }
+            .row-list{
+                display:none;
+                line-height:r(24.5);
+                padding:0 r(20) r(15) r(20);
+                font-size:r(13);
+                color:#65686e;
+                .item{
+                    padding:0 0 r(8);
+                    .row-title{
+                        color:#585a5f;
+                        line-height:r(30);
+                        font-size:r(15);
+                        @include ellipsis;
+                    }
+                }
+                
+            }
+        }
+    }
+}

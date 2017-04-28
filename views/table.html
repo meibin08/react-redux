@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+		<meta name="format-detection" content="telephone=no, email=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<title>推广计划</title>
+		<script>(window.__setFontSize__=function(){document.documentElement.style.fontSize = Math.min(640, Math.max(document.documentElement.clientWidth, 320)) / 320 * 14 + 'px'})()</script>
+	</head>
+	<body>
+		<div id="app" style="height: 100%;"></div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="oDiv">
+			
+		</div>
+		<div id="oPage"></div>
+		<style>
+* {
+	margin:0;
+	padding:0;
+}
+#oPage{padding:20px;text-align: center;}
+#oPage a{margin:0 10px 0 0;padding:0 5px;}
+#oPage a.current{color:#c00;background-color:#f1f1f1;}
+body{padding:0 10px;}
+
+.hide{
+	display: none;
+}
+.unfold-btn i{
+	display:inline-block;
+	border-width:8px;
+	border-style:solid dashed;
+	border-color:#333 transparent transparent;
+	transition:transform .3s;
+	-webkit-transition:-webkit-transform .3s;
+}
+.unfold-btn.show i{
+	-webkit-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+table{border-collapse:collapse;border:none;table-layout:fixed; word-break: break-all; word-wrap: break-word}
+td,th{border:1px solid #999; border-collapse: collapse;  }
+.children_unfold_table .table_tr-th{border-top:0;}
+.children_unfold_table .table_tr-th:first-child,
+.children_unfold_table .td:first-child{border-left:0;}
+.children_unfold_table .table_tr-th:last-child,
+.children_unfold_table .td:last-child{border-right:0;}
+.children_unfold_table .table_tr-th:last-child,
+.children_unfold_table tr:last-child td{border-bottom:0;}
+.children_unfold_table .td:last-child{border-right:0;}
+.table_children-nav .table_children-nav-tr td{border-top:0;}
+.table_children-nav .table_children-nav-tr td:first-child{border-left:0;}
+.table_children-nav .table_children-nav-tr td:last-child{border-right:0;}
+.table_tr_nav-td .children_unfold_table tr:last-child td{border-bottom:1px solid #999;}
+.table_tr_nav-td .children_unfold_table,
+.table_tr_nav-td .table_children-nav{position: relative;bottom: -1px;}
+
+		</style>
+		<script type="text/javascript" src="/insagent/miAssets/js/vendors.js"></script>
+		<script type="text/javascript" src="/insagent/miAssets/js/index.js"></script>
+		<script src="https://static.zhongan.com/website/public/js/jquery/v1.8.1/jquery-1.8.1.min.js"></script>
+		<script>
+		var data ={
+	"timestamp": "2017-03-17 15:59:59",
+	"success": true,
+	"errorMsg": null,
+	"errorId": 0,
+	"bizcontent": {
+		"report": [{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},
+			{
+				"itemType": "s",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			},
+			{
+				"itemType": "s",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			},
+			{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},{
+				"itemType": "c",
+				"page":9,
+				"report": {
+					"id": 21,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "c",
+					"caseNum": "天龙八部-TestCase-1",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": "10.139.115.27:8080null",
+					"request": "{\n  \"insuredId\": \"8764426362\" }\n}",
+          "response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\"}\"}",
+          "checkPoint": "msgCode==保单信息验证成功",
+					"testResult": "Pass",
+					"errorInfo": "成功",
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": null
+			},
+			{
+				"itemType": "s",
+				"page":"10",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			},
+			{
+				"itemType": "s",
+				"page":"11",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			},
+			{
+				"itemType": "s",
+				"page":"12",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			},
+			{
+				"itemType": "s",
+				"page":"13",
+				"report": {
+					"id": 22,
+					"rid": 68,
+					"taskId": null,
+					"caseType": "s",
+					"caseNum": "天龙八部-TestCase-2",
+					"caseName": null,
+					"stepNum": null,
+					"stepName": null,
+					"projectName": "天龙八部",
+					"url": null,
+					"request": null,
+					"response": null,
+					"checkPoint": null,
+					"testResult": null,
+					"errorInfo": null,
+					"caseExecuteAt": null,
+					"create_time": null,
+					"modify_time": null,
+					"delete_time": null
+				},
+				"suiteRep": [
+					{
+						"caseName": null,
+						"stepNum": "children001",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0022",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"response": "{\"param\":\"{\\\"msgCode\\\":\\\"1\\\",}\"}",
+						"checkPoint": "msgCode==1\nmsgInfo>>保单信息验证成功\n",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					},
+					{
+						"caseName": null,
+						"stepNum": "children0033",
+            "date":"2017-06-20",
+						"stepName": null,
+						"url": "10.139.115.27:8080null",
+						"request": "infoJson={\n  \"insuredId\": \"3314241594\"}",
+						"checkPoint": "msgCode==1",
+						"testResult": "Pass",
+						"errorInfo": null,
+						"caseExecuteAt": null,
+						"report_id": 22
+					}
+				]
+			}
+		]
+	},
+	"infoMsg": null
+}
+		var Table = {
+			init:function (options) {
+				this.Table = options.Table,
+				this.Page = options.Page,
+				this.tHead = options.tHead,
+				this.tBody = options.tBody,
+				this.pageSize = (options.pageSize||10),
+				this.currPage = 1,
+				this.maxPage =Math.ceil(this.tBody.length / this.pageSize);
+				this.getRowNum = this.getRowSum();//行
+				this.getColNum = this.tHead.length; //列
+				this.childrenHead = [{"value":"请求数据",width:"25%"},{"value":"返回值",width:"25%"},{"value":"错误信息",width:"25%"},{"value":"检查点",width:""}];
+				// this.Page= options.Page,
+				// this.callback= options.callback;
+				Table.createTable();
+				this.pageInit();
+			},
+			unfoldHandler(e,isChildren){
+				var children_table = '';
+				if(isChildren){
+					children_table = $(e).closest("table").next(".children_unfold_table");
+				}else{
+					children_table = $(e).closest("tr").next(".table_tr-unfold");
+				};
+				$(e).hasClass("show")?$(e).removeClass("show"):$(e).addClass("show");
+				children_table.is(":hidden")?children_table.removeClass("hide"):children_table.addClass("hide");
+				// console.log();
+			},
+			createTable:function(){
+				var Odiv = document.querySelector("#"+this.Table);
+				var table = document.createElement("table");
+				table.id = this.Table+"_table";
+				table.className = this.Table+"_table";
+				table.setAttribute("width","100%");
+				table.setAttribute("border","1"); 
+				table.setAttribute("cellspacing","0");
+				table.setAttribute("cellpadding","0");
+				
+				table.innerHTML = this.HeaderHtml(this.tHead)+this.TbodyHtml(this.pageData());
+				Odiv.appendChild(table);
+			},
+			
+			getRowSum:function(){
+				var len =this.tBody.length;
+				var page = (this.currPage*this.pageSize);
+				var prev = (this.currPage-1)*this.pageSize;//上一页
+				var sum = page>=len?(len-prev):(page-prev);
+				//console.log(sum)
+				return sum;
+				
+			},
+			HeaderHtml:function(data){
+				var arr =[];
+				arr.push("<tbody id="+(Math.random()*100)+"_head>");
+				arr.push("<tr height=35  class='table_tr-head'>");
+				for(var i=0;i<data.length;i++){
+					var item = data[i];
+					arr.push("<th class='table_tr-th' width="+item.width+">");
+					arr.push(item.value);
+					arr.push("</th>");
+				};
+				arr.push("</tr>");
+				arr.push("</tbody>");
+				return arr.join("");
+			},
+			TbodyHtml:function(data){
+				if(!data){
+					return '';
+				};
+				var arr =[];
+				arr.push("<tbody id="+this.Table+"_tbody_node>");
+				for(var i=0;i<this.getRowNum;i++){
+					var item = data[i];
+					var report = item.report;
+					var itemType =item.itemType;
+					var suiteRep = item.suiteRep;
+					var colspan = itemType == "c" ?0:this.getColNum;
+					arr.push("<tr class='table_tr_nav tr_nav_"+i+"'>");
+					var obj = {
+							caseNum :report.caseNum+"_"+i,
+							caseName:report.caseName
+						};
+					if(itemType == "c" || !suiteRep.length){
+						// console.log(i,item);
+						obj.stepNum=report.stepNum;
+						obj.date=report.date;
+						obj.handler="<p class='unfold-btn' onClick='Table.unfoldHandler(this);'>展开 <i></i></p>";
+					}else{
+						obj.children = suiteRep;
+						colspan = colspan-(Object.keys(obj).length-1);
+					};
+					for(var key in obj){
+						arr.push("  <td class='table_tr_nav-td' colspan="+(key =="children"?colspan:'')+">");
+						if(key =="children"){
+							arr.push(this.ChildrenHtml(obj[key],true));
+						}else{
+							arr.push(obj[key]);
+						}
+						arr.push("</td>");
+					};
+					arr.push("</tr>");
+					if(itemType == "c" || !suiteRep.length){
+						arr.push(this.NotReport([report],i));
+					};
+				};
+				arr.push("</tbody>");
+				return arr.join("");
+			},
+			NotReport:function(report,i){ //itemType ==c, 没有子级
+				var row =[];
+				row.push("<tr class='table_tr-unfold hide tr_unfold"+i+"'>");
+				row.push("<td colspan="+this.getColNum+" border=0>");
+				row.push(this.ChildrenHtml(report));
+				row.push("</td>");
+				row.push("</tr>");
+				return row.join("");
+			},
+			ChildrenHtml(data,isNav){
+				var arr =[];
+				for(var i=0;i<data.length;i++){
+					var item = data[i];
+					if(isNav){
+						arr.push(this.childrenNav(item,i));
+					};
+					arr.push("<table class='children_unfold_table unfold_table_"+i+" "+(isNav?'hide':'')+"' width='100%' border=1 cellspacing=0 cellpadding=0>");
+					arr.push(this.HeaderHtml(this.childrenHead));
+					arr.push("<tr>");
+					var obj ={
+						request:item.request,
+						response:item.response,
+						errorInfo:item.errorInfo,
+						checkPoint:item.checkPoint
+					};
+					arr.push(this.td(obj));
+					arr.push("</tr>");
+					arr.push("</table>");
+				};
+				return arr.join("");
+			},
+			childrenNav:function(data,i){//子级导航
+				var nav = [];
+				var _nav = {
+					stepNum:data.stepNum,
+					date:data.date,
+					handler:"<p  class='unfold-btn' onClick='Table.unfoldHandler(this,true);'>展开 <i></i></p>",
+				};
+				var _navSet = ['38.4%','38.4%',''];
+				 nav.push("	<table class='table_children-nav table_"+i+"' border=1 width='100%' cellspacing=0 cellpadding=0>");
+				 nav.push("		<tr class='table_children-nav-tr tr_"+i+"'>");
+				 nav.push(			this.td(_nav,_navSet));
+				 nav.push("		</tr>");
+				 nav.push("	</table>");
+				 return nav.join("");
+			},
+			td:function(obj,setData){
+				var td = [];
+				var i =0;
+				for(var key in obj){
+					i++;
+					var width = (i>=Object.keys(obj).length)?"auto":(setData?setData[i-1]:"25%");
+					td.push('<td width='+width+' class="td td_'+(i-1)+'">');
+					td.push(obj[key]);
+					td.push("</td>");
+				};
+				return td.join("");
+			},
+			pageInit:function(data){
+				var page = document.querySelector("#"+this.Page);
+				page.innerHTML = this.pageHtml();
+			},
+			pageHandle(e){
+				var oTbody = document.querySelector("#"+this.Table+"_tbody_node");
+				var table = document.querySelector("#"+this.Table+"_table");
+				if(oTbody){
+					oTbody.remove();
+				};
+				this.currPage = parseInt($(e).attr("data-page"));
+				table.innerHTML+=this.TbodyHtml(this.pageData());
+				if(!$(e).hasClass('false')){
+					$(e).addClass("current").siblings().removeClass("current");
+				}else{
+					$(e).siblings('span').find('a:eq('+(this.currPage-1)+')').addClass("current").siblings().removeClass("current");
+				};
+			},
+			pageData:function(){
+				var arr = [];
+				this.getRowNum = this.getRowSum();
+				arr = this.tBody.slice(((this.currPage-1)*this.pageSize),(this.currPage*this.pageSize));
+				return arr;
+			},
+			pageHtml(){
+				var a =[];
+				a.push('<a class="table_page-a first false" href="javascript:void(0);" data-page="1" onClick="Table.pageHandle(this);">首页</a>');
+				a.push("<span class=page-content>");
+				for(var i=0;i<this.maxPage;i++){
+					a.push('<a class="table_page-a '+(this.currPage==(i+1)?"current":"")+'" href="javascript:void(0);" data-page="'+(i+1)+'" onClick="Table.pageHandle(this);">'+(i+1)+'</a>');
+				}
+				a.push("</span>");
+				a.push('<a class="table_page-a last false" href="javascript:void(0);" data-page="'+this.maxPage+'" onClick="Table.pageHandle(this);">尾页</a>');
+				return a.join("");
+			}
+};
+
+		Table.init({
+			Table:"oDiv",
+			Page:"oPage",
+			tHead:[{
+				value:"名称",
+				width:"15%"
+			},{
+				value:"用例名称",
+				width:"20%"
+			},{
+				value:"步骤",
+				width:"25%"
+			},{
+				value:"时间",
+				width:"25%"
+			},{
+				value:"结果",
+				width:""
+			}],
+			tBody:data.bizcontent.report.concat(data.bizcontent.report,data.bizcontent.report,data.bizcontent.report),
+			pageSize:10
+		})
+
+		</script>
+	</body>
+</html>

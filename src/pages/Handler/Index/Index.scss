@@ -1,0 +1,42 @@
+@import "src/style/index";
+
+
+.app-container{background-color: rgb(243, 242, 247);}
+.i-handle{
+	
+	.hd{
+        background:#fff;
+        padding:r(10) r(15);
+        @include borderBottom($color:#e7e9ec);
+        box-shadow :0 r(1) r(8) #d4cdcd;
+        margin:0 0 r(10);
+        display: flex;
+        .search{
+            -webkit-box-flex:1;
+            width:80%;
+            margin:0 r(14) 0 0;
+            input{
+                padding:0 r(10);
+                border:1px solid #aba7a7;
+                line-height:r(38);
+            }
+        }
+    }
+    .add-del-list{
+        background:#fff;
+        padding:0 0 0 r(8);
+        margin:0 0 r(20);
+        @include borderBottom($color:#e7e9ec);
+        .li-item{
+            &:not(:last-child){
+                @include borderBottom($color:#e7e9ec);
+            }
+            padding:r(10) r(10) r(10) 0;
+            line-height: r(30);
+            p{
+                margin:0 r(5) 0 0;
+                @include ellipsis;
+            }
+        }
+    }
+}

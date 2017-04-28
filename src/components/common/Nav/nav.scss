@@ -1,0 +1,34 @@
+@import "src/style/index";
+.cm-nav-tit{
+	background-color:#fff;
+	position:relative;
+	@include border($left:0,$right:0,$color:#edeeee);
+	height:r(44);
+	line-height:r(43);
+	padding:r(.5) r(15) r(.5) r(23);
+	@include color-66;
+
+	&::after{
+		content:"";
+		position:absolute;
+		left:r(15);
+		top:(50%);
+		margin:r(-8) 0 0;
+		width:r(3);
+		height:r(16);
+		border-radius:r(3);
+		background:#117d90;
+	}
+	h3{    
+		font-size:r(17);
+	}
+	&.default{
+		.other{
+			float:right;
+			.nav-faq{
+				@include color-96;
+				font-size:r(14);
+			}
+		}
+	}
+}

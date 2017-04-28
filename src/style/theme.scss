@@ -1,0 +1,50 @@
+@import "./variables";
+
+.skin-default {
+  &-color {
+    color: #fff;
+  }
+  &-bg {
+    background-color: $skin-theme-default;
+  }
+}
+.skin-success {
+  &-color {
+    color: #fff;
+  }
+  &-bg {
+    background-color: $skin-theme-success;
+  }
+}
+
+.skin-info {
+  &-color {
+    color: #fff;
+  }
+  &-bg {
+    background-color: $skin-theme-info;
+  }
+  &-radio{
+    border: 1px solid $skin-theme-info;
+    color: $skin-theme-info;
+  }
+}
+
+.skin-warning {
+  &-color {
+    color: #fff;
+  }
+  &-bg {
+    background-color: $skin-theme-warning;
+  }
+}
+
+
+.skin-error {
+  &-color {
+    color: #fff;
+  }
+  &-bg {
+    background-color: $skin-theme-error;
+  }
+}

@@ -1,0 +1,93 @@
+{
+	"error_code": 0,
+	"msg": "ok",
+	"data": {
+		"group_topic_comment_list": [{
+			"id": "1",
+			"user_id": "436080620",
+			"topic_id": "9",
+			"parent_id": "0",
+			"to_user_id": "0",
+			"root_id": "0",
+			"content": "好，支持，有希望了",
+			"created": "1417685132",
+			"reply_comment_list": [{
+				"id": "2",
+				"user_id": "436080620",
+				"topic_id": "9",
+				"parent_id": "1",
+				"to_user_id": "436080620",
+				"root_id": "1",
+				"content": "支持，有希望了",
+				"created": "1417685195",
+				"user": {
+					"nick_name": "张三",
+					"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 1,
+					"sex": 1
+				},
+				"to_user": {
+					"nick_name": "李四",
+					"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 5,
+					"sex": 2
+				}
+			}, {
+				"id": "3",
+				"user_id": "436080621",
+				"topic_id": "9",
+				"parent_id": "2",
+				"to_user_id": "436080620",
+				"root_id": "1",
+				"content": "有希望了",
+				"created": "1417685327",
+				"user": {
+					"nick_name": "老八",
+					"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 8,
+					"sex": 2
+				},
+				"to_user": {
+					"nick_name": "王五",
+					"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 9,
+					"sex": 1
+				}
+			}],
+			"user": {
+				"nick_name": "三子",
+				"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+				"level": 10,
+				"sex": 1
+			},
+			"to_user": {
+				"nick_name": "userid0",
+				"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+				"level": 1,
+				"sex": 1
+			}
+		}, {
+			"id": "4",
+			"user_id": "436080620",
+			"topic_id": "9",
+			"parent_id": "0",
+			"to_user_id": "0",
+			"root_id": "0",
+			"content": "哈哈哈哈啊哈还是到华盛顿时候到华盛顿好山东快书的收",
+			"created": "1417686278",
+			"reply_comment_list": [],
+			"user": {
+				"nick_name": "说不得",
+				"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 10,
+					"sex": 2
+			},
+			"to_user": {
+				"nick_name": "阿宝",
+				"avatar_url": "http://f.hiphotos.baidu.com/super/whfpf%3D425%2C260%2C50/sign=4262c2d7452309f7e73afe52143338c1/83025aafa40f4bfbf6c54917004f78f0f736185f.jpg",
+					"level": 10,
+					"sex": 2
+			}
+		}]
+	}
+}

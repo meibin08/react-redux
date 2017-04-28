@@ -1,0 +1,117 @@
+@import "src/style/index";
+
+
+@-webkit-keyframes mymove1 /* Safari and Chrome */
+{
+    to {left:-130%;}
+}
+.app-container{background-color: #fff;}
+.i-home{
+	background:#fff;
+	.user-info {
+        background-color: #117d90;
+        padding-top: r(32);
+        opacity:0.1;
+        .user-icon {
+            margin: 0 auto;
+            text-align: center;
+            width: r(94);
+            height: r(94);
+            padding: r(3);
+            border-radius: 50%;
+            border: 1px solid #f2f5f7;
+            overflow: hidden;
+            img {                
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .user-name {
+            color: #fff;
+            padding: r(7) 0;
+            font-size: r(15);
+            text-align: center;
+        }
+    }
+    .user-identity{
+    	text-align:center;
+    	padding:r(10) 0 r(15);
+    	.inner{
+    		display:inline-block;
+            font-size: r(13);
+			color: #d3e6f7;
+		    border-radius: 50px;
+		    border-width: r(1);
+		    border-style: solid;
+		    border-color: #93cdff;
+		    padding: r(5) r(15);
+    	}
+    }
+    .wave{
+    	padding-top:r(20);
+    	position:relative;
+    	width: 100%;
+        height: r(70);
+	    background-color: #117d90;//239aff
+
+    	img{
+    		height:  r(50);
+    		width:230%;
+    		left:0;
+    		position:absolute;
+    		max-width:230%;
+    	}
+    	img.a{
+    		-webkit-animation:mymove1 9s infinite;
+            -webkit-animation-timing-function: linear;   
+    	}
+    	img.b{
+			-webkit-animation:mymove1 7s infinite;
+            -webkit-animation-timing-function: linear;
+    		bottom:r(-5);
+    		z-index:12;
+    	}
+    	img.c{
+    		-webkit-animation:mymove1 7s infinite;
+            -webkit-animation-timing-function: linear;
+    		bottom:r(-5);z-index:13;
+    	}
+    	img.d{
+    		-webkit-animation:mymove1 7s infinite;
+            -webkit-animation-timing-function: linear;
+			bottom: r(-9);z-index:14;
+    	}
+    }
+	.icon-items{
+		display: -webkit-flex; 
+        -webkit-flex-wrap:wrap;
+        -webkit-justify-content:space-between;
+        -webkit-align-content:space-between;
+        position:relative;
+        z-index: 20;
+        height: auto;
+        .item {
+            text-align: center;
+            -webkit-flex-basis: r(120);
+            margin:0 0 r(20);
+            a{display:block;}
+            div.icon{
+                width:r(74);
+                height: r(40);
+                padding:r(4) 0;
+                margin:0 auto;
+                text-align:center;
+                .i-svg{
+					width:r(31.86);
+					height:r(30);
+                }
+            }
+            p{
+            	color: #65686e;
+                font-size: r(14);
+                padding-top: r(8);
+            }
+        }
+	}
+}

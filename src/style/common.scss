@@ -1,0 +1,89 @@
+@import "./variables";
+
+@mixin color-96 {
+  color:#999696;
+}
+@mixin color-f6 {
+  color:#f66;
+}
+@mixin color-66 {
+  color:#666464;
+}
+@mixin ellipsis{
+  white-space: nowrap;text-overflow: ellipsis;overflow:hidden;
+}
+@mixin box($pack: center, $align: center) {
+    display: box;
+    display: -webkit-box;
+    box-pack: $pack;
+    box-align: $align;
+    -webkit-box-pack: $pack;
+    -webkit-box-align: $align;
+}
+.ds-box{
+    display:-webkit-box;
+    display:box;
+}
+
+.hide{display:none;}
+.fixed-btn{
+  font-size: r(20);
+  line-height: r(49);
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  background-color: #f66;
+}
+.cm-flex{
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+h2,h3,h4,h5,h6{font-weight: normal;}
+
+//重置弹窗操作按钮的风格样式
+.ui-modal-footer{
+      padding:0 r(5);
+      @include borderTop($color:#edeeee);
+}
+.ui-modal-footer .ui-button {
+  background-color:transparent ;
+  border:0;
+  font-size:r(17);
+  @include color-96;
+  &:active,&:hover{
+    background-color:#d8d8d8 ;
+    border-color:#d8d8d8 ;
+  }
+}
+.ui-cell + .ui-cell:before{
+    border-color:#edeeee;
+}
+.ui-modal-footer button + button{
+  margin:0;
+  @include borderLeft($color:#edeeee);
+}
+.ui-modal-footer .ui-button.theme-success{
+  @include color-f6;
+}
+.ui-modal-header{
+  border:0;
+  @include borderBottom($color:#e6e6e6);
+}
+.ui-panel-body{
+  border:none;
+  padding-top:r(1);
+  padding-bottom:r(1);
+  @include border($left:0,$right:0,$color:#edeeee);
+}
+.ui-cell-explain{
+  padding:0;
+}
+.empty-msg{
+  text-align:center;padding:r(20) 0;
+  background-color:#fefefe;
+  @include borderBottom($color:#e6e6e6);
+}
