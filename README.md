@@ -6,12 +6,12 @@
 
 ## 开发环境
 - npm run dev
-- 访问http://localhost:80
+- 访问http://localhost:80/redux
 
 ## 生成环境
 - npm run build
 - npm start
-- 访问http://localhost:80
+- 访问http://localhost:80/redux
 
 ##要点
 

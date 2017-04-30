@@ -89,7 +89,7 @@ class Start extends Component{
 					<div className="m-mask">
 					{
 					_homeStart.map((circle,i)=>{
-						return (i>2?null:(<p key={'circle'+i} className={classnames("mask-circle",{[`mc${(i+1)}`]:true,"hide":!circle.status})} onClick={()=>ACTIONS.dotHandler(circle.id,(i==2?20:0))}><i></i></p>));
+						return (i>2?null:(<p key={'circle'+i} className={classnames("mask-circle",{[`mc${(i+1)}`]:true,"hide":!circle.status})} onClick={()=>ACTIONS.dotHandler(circle,(_homeStart[_homeStart.length-1]))}><i></i></p>));
 					})
 					}
 

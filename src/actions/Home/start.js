@@ -10,9 +10,10 @@ import StaticToast from 'src/components/common/Toast';
 import {SHADOW_TRANSITION} from "src/constants/Home/start";
 
 
-let transitionAnimate = (xMax,yMax,endNum,msec,attach,fn1,fn2)=>{
+let transitionAnimate = (options,fn1,fn2)=>{
+	let {xMax,yMax,endNum,msec,xAttach,yAttach} = options||{};
 	var X = 0,Y=0;
-	var _G = attach || 0;
+	var _xAttach = xAttach || 0,_yAttach = yAttach || 0;
 	var num=0;
 	var W = document.documentElement.clientWidth|| document.body.clientWidth;
 	var H =(document.documentElement.clientHeight|| document.body.clientHeight);
@@ -23,7 +24,7 @@ let transitionAnimate = (xMax,yMax,endNum,msec,attach,fn1,fn2)=>{
 			X = 0;
 			Y = Y>= yMax ? 0 :Y+=1;
 		};
-		var item = (W * -X -_G +"px ")+(-Y* H+"px");
+		var item = (W * -X +_xAttach +"px ")+(-Y* H +_yAttach+"px");
 		result.push(item);
 		fn1&&fn1(item);
 		X+=1;
@@ -34,27 +35,27 @@ let transitionAnimate = (xMax,yMax,endNum,msec,attach,fn1,fn2)=>{
 
 let start =  {
 	touchNum:0,
-	dotHandler:(id,attach)=>{
+	dotHandler:(item,lastItem)=>{
 		return (dispatch)=>{
-			transitionAnimate(4, 3, 12, 60,(attach||0),(item)=>{
+			transitionAnimate(item.options,(value)=>{
 				dispatch({
 					type:SHADOW_TRANSITION,
 					data:{
-						id:id,
+						id:item.id,
 						status:false,
-						maskPosition:item
+						maskPosition:value
 					}
 				});
 			},(result)=>{
 				start.touchNum+=1;
 				if(start.touchNum>=3){
-					transitionAnimate(4, 5, 20, 80,0,(s)=>{
+					transitionAnimate(lastItem.options,(val)=>{
 						dispatch({
 							type:SHADOW_TRANSITION,
 							data:{
-								id:"04",
+								id:lastItem.id,
 								status:false,
-								maskPosition:s
+								maskPosition:val
 							}
 						});
 					});
