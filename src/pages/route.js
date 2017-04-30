@@ -19,8 +19,8 @@ const rootRoute = {
           cb(null, require('./NotFoundPage'));
         });
       },
-      // onEnter: () => bridge.doAction('setTitle', { title: '出错啦' })
-      onEnter: () => bridge.doAction('setWechat')
+      onEnter: () => bridge.doAction('setTitle', { title: '出错啦' })
+      // onEnter: () => bridge.doAction('setWechat')
     }
   ],
   indexRoute:{ onEnter: (nextState, replace) => replace('/redux/home') }, //默认重定向到->首页

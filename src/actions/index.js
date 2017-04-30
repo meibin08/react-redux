@@ -5,14 +5,13 @@
  * @description：redux示例 - 各模块勿重复相同的函数名；
  */
 
-import apply from "./apply";
 import homeIndex from "./Home/index";
 import homeStart from "./Home/start";
 import introIndex from "./Intro/index";
 import handlerIndex from "./Handler/index";
 
 let actions = Object.assign({},
-	apply,homeIndex,
+	homeIndex,
 	homeStart,
 	introIndex,
 	handlerIndex
