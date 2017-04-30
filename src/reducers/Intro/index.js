@@ -10,6 +10,7 @@ import { fetchJson } from 'src/utils/fetch';
 import { browserHistory } from 'react-router';
 import StaticToast from 'src/components/common/Toast';
 import {INTRO_INIT,TOGGLE} from "src/constants/Intro";
+
 let initStates = {
 	introList:[],
 };

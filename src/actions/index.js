@@ -5,12 +5,16 @@
  * @description：redux示例 - 各模块勿重复相同的函数名；
  */
 
-
-
 import apply from "./apply";
-import home from "./home";
-import intro from "./intro";
-import handler from "./handler";
+import homeIndex from "./Home/index";
+import homeStart from "./Home/start";
+import introIndex from "./Intro/index";
+import handlerIndex from "./Handler/index";
 
-let actions = Object.assign({},apply,home,intro,handler);
+let actions = Object.assign({},
+	apply,homeIndex,
+	homeStart,
+	introIndex,
+	handlerIndex
+	);
 export default actions;

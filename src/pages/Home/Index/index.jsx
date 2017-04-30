@@ -15,7 +15,9 @@ import StaticToast from 'src/components/common/Toast';
 import format from "src/utils/format";
 import dia from "src/utils/dia";
 import actions from "src/actions";
+import Start from "../Start";
 import './Index.scss';
+
 
 
 class Home extends Component{
@@ -31,6 +33,7 @@ class Home extends Component{
 	componentDidMount(){
 		dia(this);
 		let {ACTIONS}=this.props;
+
 		ACTIONS.init();
 		ACTIONS.wave();
 	}
@@ -70,6 +73,7 @@ class Home extends Component{
 				})
 				}
 				</div>
+				<Start/>
 			</section>
 		);
 	}
@@ -81,10 +85,11 @@ const SVGICON = (props)=>(
 	</svg>
 );
 function mapStateToProps(state){
-	const {home} = state;//
+	// console.log(state)
+	const {homeIndex} = state;//
 	return {
-		_classList:home.classList,
-		_wave:home.wave,
+		_classList:homeIndex.classList,
+		_wave:homeIndex.wave,
 	};
 }; 
 

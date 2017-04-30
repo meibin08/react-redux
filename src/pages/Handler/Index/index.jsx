@@ -97,10 +97,10 @@ const Alert = (props)=>(
     </Modal>
 );
 function mapStateToProps(state){
-	const {handler} = state;//
-	// console.log(handler.handlerList);
+	const {handlerIndex} = state;//
+	// console.log(handlerIndex.handlerList);
 	return {
-		_handlerList:handler.handlerList,
+		_handlerList:handlerIndex.handlerList,
 	};
 }; 
 

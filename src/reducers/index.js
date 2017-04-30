@@ -1,9 +1,13 @@
 
 import {combineReducers} from "redux"; //combinReducers用于合并各模块的reducers;
-import apply from "./apply";
-import home from "./home";
-import intro from "./intro";
-import handler from "./handler";
+import homeIndex from "./Home";
+import homeStart from "./Home/start";
+import introIndex from "./Intro";
+import handlerIndex from "./Handler";
 
-const reducers = combineReducers({apply,home,intro,handler});
-export default reducers;
+export default combineReducers({
+	homeIndex,
+	homeStart,
+	introIndex,
+	handlerIndex
+});

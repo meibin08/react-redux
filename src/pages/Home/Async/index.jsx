@@ -40,7 +40,7 @@ class List extends Component{
 };
 
 function mapStateToProps(state){
-	const {home} = state;//
+	const {homeIndex} = state;//
 	return {
 	};
 }; 

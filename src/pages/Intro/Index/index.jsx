@@ -81,9 +81,9 @@ const SVG=(props)=>(
 );
 function mapStateToProps(state){
 	console.log(state);
-	const {intro} = state;//
+	const {introIndex} = state;//
 	return {
-		_introList:intro.introList
+		_introList:introIndex.introList
 	};
 }; 
 

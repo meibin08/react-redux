@@ -11,7 +11,7 @@ config.module.loaders.push({
   loader: 'babel',
   query: {
     presets: ['react', 'es2015', 'stage-0'],
-    plugins: ['add-module-exports']
+    plugins: ['add-module-exports',"transform-runtime"]
   }
 });
 config.plugins.push(new webpack.DefinePlugin({

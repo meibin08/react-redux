@@ -1,0 +1,141 @@
+@import "src/style/index";
+
+@-webkit-keyframes dot{
+	to{
+		-webkit-transform:scale(2);
+		opacity:0;
+	}
+}
+.i-start{
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	top:0;
+	z-index:20;
+	overflow:hidden;
+    -webkit-box-orient: vertical;
+    -webkit-transform-origin: center center;
+    .page-content{
+    	height:100%;
+    	 overflow: hidden;
+    	-webkit-box-flex: 100; 
+    	.m-mask {
+		    position: relative;
+		    width: 100%;
+		    height: 100%;
+		    .mask-circle{
+				position:absolute;
+				top:50%;
+				width:r(50);
+				height:r(50);
+				border-radius:50%;
+				z-index:6;
+				&::after{
+					content:"";
+					position:absolute;
+					left:0;
+					top:0;
+					z-index: 1;
+					width:100%;
+					height:100%;
+				}
+				&::after,i{
+					@include images($url:"./images/mask_btn_touch.png",$size:(r(30) auto));
+					background-position:center;
+				}
+				i{	
+					position:relative;
+					z-index:2;
+					opacity:.9;
+					display:block;
+					height:r(50);
+				}
+				&.mc1{
+					margin-top:r(-46);
+					left:r(40);
+					i{
+						-webkit-animation:dot 4s .2s linear infinite;
+					}
+				}
+				&.mc2{
+					margin-top:r(50);
+					left:r(108.5);
+					i{
+						-webkit-animation:dot 5s .5s linear infinite;
+					}
+				}
+				&.mc3{
+					margin-top:r(-67);
+					left:r(275);
+					i{
+						-webkit-animation:dot 3s 1s linear infinite;
+					}
+					
+				}
+			}
+		}
+    }
+	.mask-img{
+		position:relative;
+		width:100%;
+		height:100%;
+		z-index:5;
+		.front{
+		    position: relative;
+			width:100%;
+			height:100%;
+			overflow: hidden;
+			background:center/cover no-repeat;
+			background-image: url(./images/a1.jpg);
+		}
+		.back,.touch{
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background: center/cover no-repeat #ddd;
+		    background-image: url(./images/bg.jpg);
+		}
+		.th1{
+		    -webkit-mask-image: url(./images/Touch2.png)!important;
+			-webkit-mask-repeat: no-repeat;
+		    -webkit-mask-position: 640px 640px;
+		    -webkit-mask-size: 400% 300%!important;
+		    z-index: 3;
+		}
+		.th2{
+			
+		    -webkit-mask-image: url(./images/Touch3.png)!important;
+			-webkit-mask-repeat: no-repeat;
+		    -webkit-mask-position: 640px 640px;
+		    -webkit-mask-size: 400% 300%!important;
+		    z-index: 3;
+		}
+		.th3{
+			-webkit-mask-image: url(./images/Touch1.png)!important;
+		    -webkit-mask-repeat: no-repeat;
+		    -webkit-mask-position: 640px 640px;
+		    -webkit-mask-size: 400% 300%!important;
+		    z-index: 3;
+		}
+		.th4{
+			z-index: 4;
+			-webkit-mask-image: url(./images/Touch4.png)!important;
+		    -webkit-mask-repeat: no-repeat;
+		    -webkit-mask-position: 640px 640px;
+		    -webkit-mask-size: 400% 500%!important;
+		}
+	}
+	.mask-dot{
+		position:absolute;
+		left:0;right:0;top:0;
+		z-index:6;
+		width:100%;
+		height:100%;
+		
+	}
+}
+
+
