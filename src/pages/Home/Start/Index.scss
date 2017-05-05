@@ -6,6 +6,21 @@
 		opacity:0;
 	}
 }
+@-webkit-keyframes trHide{
+	0%{
+		-webkit-transform:scale(1);
+		opacity:1;
+	}
+	99%{
+		-webkit-transform:scale(0);
+		opacity:0;
+	}
+	100%{
+		-webkit-transform:scale(0);
+		display:none;
+		opacity:0;
+	}
+}
 .i-start{
 	position:fixed;
 	left:0;
@@ -16,6 +31,11 @@
 	overflow:hidden;
     -webkit-box-orient: vertical;
     -webkit-transform-origin: center center;
+    &.transition-hide{
+			-webkit-animation:trHide 1s .1s linear forwards;
+    	.page-content{
+    	}
+    }
     .page-content{
     	height:100%;
     	 overflow: hidden;

@@ -6,4 +6,5 @@
  */
 
 export const SHADOW_TRANSITION = "SHADOW_TRANSITION";
+export const HIDE_START = "HIDE_START";
 

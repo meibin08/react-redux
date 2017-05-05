@@ -18,7 +18,7 @@ function handler(state = initStates,action){
 		case HANDLER_INIT:
 			console.log("handler_INIT =  20",action.data);
 			return Object.assign({},state,{
-				handlerList:[...state.handlerList,...action.data]
+				handlerList:action.data
 			});
 		case DELETE:
 			console.log("DELETE =  24",action.id);

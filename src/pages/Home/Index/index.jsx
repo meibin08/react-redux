@@ -14,11 +14,15 @@ import { fetchJson } from 'src/utils/fetch';
 import StaticToast from 'src/components/common/Toast';
 import format from "src/utils/format";
 import dia from "src/utils/dia";
+import Storage from 'src/utils/storage';
 import actions from "src/actions";
 import Start from "../Start";
+
 import './Index.scss';
 
 
+let store = new Storage(),
+	StorageKey = 'hideStart';
 
 class Home extends Component{
 	constructor(props){
@@ -33,7 +37,6 @@ class Home extends Component{
 	componentDidMount(){
 		dia(this);
 		let {ACTIONS}=this.props;
-
 		ACTIONS.init();
 		ACTIONS.wave();
 	}
@@ -73,7 +76,7 @@ class Home extends Component{
 				})
 				}
 				</div>
-				<Start/>
+				{(store.get(StorageKey)&&store.get(StorageKey)==1)?null:(<Start/>)}
 			</section>
 		);
 	}

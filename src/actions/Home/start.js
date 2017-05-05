@@ -7,8 +7,11 @@
 import { fetchJson } from 'src/utils/fetch';
 import { browserHistory } from 'react-router';
 import StaticToast from 'src/components/common/Toast';
-import {SHADOW_TRANSITION} from "src/constants/Home/start";
+import {SHADOW_TRANSITION,HIDE_START} from "src/constants/Home/start";
+import Storage from 'src/utils/storage';
 
+let store = new Storage(),
+	StorageKey = 'hideStart';
 
 let transitionAnimate = (options,fn1,fn2)=>{
 	let {xMax,yMax,endNum,msec,xAttach,yAttach} = options||{};
@@ -29,7 +32,7 @@ let transitionAnimate = (options,fn1,fn2)=>{
 		fn1&&fn1(item);
 		X+=1;
 		num++;
-		num >= endNum && (clearInterval(time),fn2&&fn2(result),console.log(result));
+		num >= endNum && (clearInterval(time),fn2&&fn2(result));
 	},msec);
 };
 
@@ -58,6 +61,13 @@ let start =  {
 								maskPosition:val
 							}
 						});
+					},()=>{
+						dispatch({
+							type:HIDE_START
+						});
+						setTimeout(()=>{
+							store.set(StorageKey,true,30);
+						},1100);
 					});
 				};
 				console.log(start.touchNum);

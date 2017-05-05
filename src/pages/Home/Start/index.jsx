@@ -26,22 +26,21 @@ class Start extends Component{
     	};
 	}
 	render(){
-		let {_homeStart,ACTIONS}=this.props;
-		
+		let {_transition,ACTIONS,_hideStart}=this.props;
 		return (
-			<section className="i-start" style={{"transition":"none","transform":"none"}}>
+			<section className={classnames("i-start",{"transition-hide":_hideStart})} >
 				<div className="page-content">
 					<div className="m-mask">
 					{
-					_homeStart.map((circle,i)=>{
-						return (i>2?null:(<p key={'circle'+i} className={classnames("mask-circle",{[`mc${(i+1)}`]:true,"hide":!circle.status})} onClick={()=>ACTIONS.dotHandler(circle,(_homeStart[_homeStart.length-1]))}><i></i></p>));
+					_transition.map((circle,i)=>{
+						return (i>2?null:(<p key={'circle'+i} className={classnames("mask-circle",{[`mc${(i+1)}`]:true,"hide":!circle.status})} onClick={()=>ACTIONS.dotHandler(circle,(_transition[_transition.length-1]))}><i></i></p>));
 					})
 					}
 
 						<div className="mask-img">
 							<div className="front"></div>
 							{
-							_homeStart.map((item,i)=>{
+							_transition.map((item,i)=>{
 								return (
 									<div key={'touch'+i} className={classnames({"touch":(i<3),"back":(i>2),[`th${(i+1)}`]:true})} style={{"WebkitMaskPosition":item.maskPosition}}></div>
 								);
@@ -56,9 +55,10 @@ class Start extends Component{
 };
 
 function mapStateToProps(state){
-	const {homeStart} = state;//
+	const {transition,hideStart} = state.homeStart;//
 	return {
-		_homeStart:homeStart
+		_transition:transition,
+		_hideStart:hideStart
 	};
 }; 
 
