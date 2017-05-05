@@ -18,69 +18,14 @@ import actions from "src/actions";
 import Empty from 'src/components/common/Empty';
 import './Index.scss';
 
-function arr (b,c,e,f,g,fn1,fn2){
-	var xMax = b,yMax= c;
-	var x = 0,y=0;
-	var _G = g || 0;
-	var end = e,num=0;
-	var W = document.documentElement.clientWidth|| document.body.clientWidth;
-	var H =(document.documentElement.clientHeight|| document.body.clientHeight);
-	var time = null;
-	var ar = [];
-	time = setInterval(()=>{
-		if(x >= xMax){
-			x = 0;
-			y = y>= yMax ? 0 :y+=1;
-		};
-		var item = (W * -x -_G +"px ")+(-y* H+"px");
-		ar.push(item);
-		fn1&&fn1(item);
-		x+=1;
-		num++;
-		num >= end && (clearInterval(time),fn2&&fn2(ar),console.log(ar));
-	},f);
-}
-
 class Start extends Component{
 	constructor(props){
 		super(props);
 		this.touchNum = 0;
     	this.state = {
-    		touch_a:"",
-    		touch_b:"",
-    		touch_c:"",
-    		touch_d:"",
-    		circle_a:true,
-    		circle_b:true,
-    		circle_c:true,
-    		circle_d:true,
     	};
 	}
-	componentDidMount(){
-	}
-	MaskPosition(key,attach){
-		this.setState({
-			[`circle_${key}`]:false
-		});
-		arr (4, 3, 12, 60,(attach||0),(item)=>{
-			this.setState({
-				[`touch_${key}`]:item
-			});
-		},()=>{
-			this.touchNum+=1;
-			if(this.touchNum>=3){
-				arr (4, 5, 20, 80,0,(s)=>{
-					this.setState({
-						touch_d:s
-					});
-				});
-			}
-			console.log(this.touchNum);
-		});
-	}
 	render(){
-		let {touch_a,touch_b,touch_c,touch_d,
-			circle_a,circle_b,circle_c,circle_d}=this.state;
 		let {_homeStart,ACTIONS}=this.props;
 		
 		return (

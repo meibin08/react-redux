@@ -43,10 +43,10 @@ let start =  {
 					data:{
 						id:item.id,
 						status:false,
-						maskPosition:value
+						maskPosition:value,
 					}
 				});
-			},(result)=>{
+			},(itemRes)=>{
 				start.touchNum+=1;
 				if(start.touchNum>=3){
 					transitionAnimate(lastItem.options,(val)=>{
@@ -59,7 +59,7 @@ let start =  {
 							}
 						});
 					});
-				}
+				};
 				console.log(start.touchNum);
 			});
 		};

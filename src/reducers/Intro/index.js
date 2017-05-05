@@ -25,7 +25,7 @@ function intro(state = initStates,action){
 		case TOGGLE:
 			console.log("TOGGLE =  25",action.id);
 			return Object.assign({},state,{
-				introList:state.introList.map((item) => (item.id==action.id ? {...item,status:!item.status}:{...item,status:false}))
+				introList:state.introList.map((item) => ({...item,status:(item.id==action.id?!item.status:!1)}))
 			});
 		default:
 			return state;

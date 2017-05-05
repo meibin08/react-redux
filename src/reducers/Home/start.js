@@ -4,8 +4,10 @@ import {SHADOW_TRANSITION} from "src/constants/Home/start";
 let initStates = [
 	{
 		id:"01",
+		index:0,
 		status:true,
 		maskPosition:"",
+		track:[],//轨迹记录
 		options:{
 			xMax:4,
 			yMax:3,
@@ -16,8 +18,10 @@ let initStates = [
 		}
 	},{
 		id:"02",
+		index:1,
 		status:true,
 		maskPosition:"",
+		track:[],//轨迹记录
 		options:{
 			xMax:4,
 			yMax:3,
@@ -28,8 +32,10 @@ let initStates = [
 		}
 	},{
 		id:"03",
+		index:2,
 		status:true,
 		maskPosition:"",
+		track:[],//轨迹记录
 		options:{
 			xMax:4,
 			yMax:3,
@@ -40,8 +46,10 @@ let initStates = [
 		}
 	},{
 		id:"04",
+		index:3,
 		status:true,
 		maskPosition:"",
+		track:[],//轨迹记录
 		options:{
 			xMax:4,
 			yMax:5,
@@ -55,18 +63,20 @@ let initStates = [
 ];
 function start(state = initStates,action){
 	switch(action.type){
+
 		case SHADOW_TRANSITION:
-			// console.log("TEST = 32",action.data);
+			
+
 			return state.map((item)=>{
+
 				return (
-					item.id != action.data.id ? item:{...item,...action.data}
+					item.id != action.data.id ? item : Object.assign({},item,action.data, { track : [].concat(item.track,[action.data.maskPosition]) })
 				);
 			});
 		default:
 			return state;
 	};
 };
-
 
 export default start;
 
