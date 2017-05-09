@@ -29,7 +29,7 @@ let transitionAnimate = (options,fn1,fn2)=>{
 		};
 		var item = (W * -X +_xAttach +"px ")+(-Y* H +_yAttach+"px");
 		result.push(item);
-		fn1&&fn1(item);
+		fn1&&fn1(item,num);
 		X+=1;
 		num++;
 		num >= endNum && (clearInterval(time),fn2&&fn2(result));
@@ -52,22 +52,25 @@ let start =  {
 			},(itemRes)=>{
 				start.touchNum+=1;
 				if(start.touchNum>=3){
-					transitionAnimate(lastItem.options,(val)=>{
+					transitionAnimate(lastItem.options,(val,num)=>{
+						let {endNum} = lastItem.options;
+
 						dispatch({
 							type:SHADOW_TRANSITION,
 							data:{
 								id:lastItem.id,
 								status:false,
-								maskPosition:val
+								maskPosition:val,
+								opacity : (10/endNum)
 							}
 						});
 					},()=>{
-						dispatch({
-							type:HIDE_START
-						});
 						setTimeout(()=>{
-							store.set(StorageKey,true,30);
-						},1100);
+							dispatch({
+								type:HIDE_START
+							});
+							store.set(StorageKey,true,45);
+						},400);
 					});
 				};
 				console.log(start.touchNum);

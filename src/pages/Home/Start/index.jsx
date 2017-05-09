@@ -26,9 +26,9 @@ class Start extends Component{
     	};
 	}
 	render(){
-		let {_transition,ACTIONS,_hideStart}=this.props;
+		let {_transition,ACTIONS,_hideStart,_opacity}=this.props;
 		return (
-			<section className={classnames("i-start",{"transition-hide":_hideStart})} >
+			<section className={classnames("i-start",{"hide":_hideStart})} style={{opacity:_opacity}} >
 				<div className="page-content">
 					<div className="m-mask">
 					{
@@ -55,10 +55,11 @@ class Start extends Component{
 };
 
 function mapStateToProps(state){
-	const {transition,hideStart} = state.homeStart;//
+	const {transition,hideStart,opacity} = state.homeStart;//
 	return {
 		_transition:transition,
-		_hideStart:hideStart
+		_hideStart:hideStart,
+		_opacity:opacity
 	};
 }; 
 

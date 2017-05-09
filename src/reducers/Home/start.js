@@ -3,6 +3,7 @@ import {SHADOW_TRANSITION,HIDE_START} from "src/constants/Home/start";
 
 let initStates = {
 	hideStart:false,
+	opacity:1,
 	transition:[
 		{
 			id:"01",
@@ -69,6 +70,8 @@ function start(state = initStates,action){
 
 		case SHADOW_TRANSITION:
 
+			let opacity = ( state.opacity-(Reflect.has(action.data, 'opacity') ? (action.data.opacity/10):0) );
+
 			return Object.assign({},state,{
 				transition:state.transition.map((item)=>{
 
@@ -76,7 +79,7 @@ function start(state = initStates,action){
 						item.id != action.data.id ? item : Object.assign({},item,action.data, { track : [].concat(item.track,[action.data.maskPosition]) })
 					);
 
-				})
+				}),opacity
 			});
 
 		//隐藏启动页
