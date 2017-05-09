@@ -18,7 +18,7 @@ import Storage from 'src/utils/storage';
 import actions from "src/actions";
 import Start from "../Start";
 
-import './Index.scss';
+import './Home.scss';
 
 
 let store = new Storage(),

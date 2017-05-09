@@ -15,7 +15,7 @@ let home =  {
 		return (dispatch)=>{
 			fetchJson({
 				type:"GET",
-				url:"/JsonApi/json/home.json",
+				url:"/react-redux/json/home.json",
 				success:(res)=>{
 					if(res.code == 0){
 						let {result}=res;

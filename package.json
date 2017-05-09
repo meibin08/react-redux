@@ -40,6 +40,7 @@
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.17.0",
+    "copy-webpack-plugin":"^*",
     "iscroll": "^5.2.0",
     "isomorphic-fetch": "^2.2.1",
     "node-sass": "^3.7.0",

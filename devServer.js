@@ -9,7 +9,7 @@ var app = express();
 var compiler = webpack(config);
 
 require('./server/express')(app);
-app.use('/JsonApi',express.static(path.join(__dirname, 'src')));
+app.use('/react-redux',express.static(path.join(__dirname, 'src')));
 app.use(webpackMiddleware(compiler, { 
 	noInfo: true,
 	publicPath: config.output.publicPath,
