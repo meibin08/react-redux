@@ -1,1 +1,13 @@
+.DS_Store
 node_modules
+bin
+logs
+src
+views
+Dockerfile
+*.json
+*.md
+coverage
+_book
+.idea
+*.js
