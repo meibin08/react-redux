@@ -1,6 +1,7 @@
 # React + Redux Example
  React+Redux 入门示例项目
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+ 扫描二维码可以在线查看示例
+![alt text](https://meibin08.github.io/react-redux/demo.png)
 
 ## 安装依赖包
 - npm install
