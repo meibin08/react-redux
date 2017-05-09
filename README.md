@@ -1,17 +1,18 @@
 # React + Redux Example
  React+Redux 入门示例项目
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 ## 安装依赖包
 - npm install
 
 ## 开发环境
 - npm run dev
-- 访问http://localhost:80/redux
+- 访问http://localhost/#/
 
 ## 生成环境
 - npm run build
 - npm start
-- 访问http://localhost:80/redux
+- 访问http://localhost/#/
 
 ##要点
 
