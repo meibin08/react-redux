@@ -1,6 +1,6 @@
 # React + Redux Example
  React+Redux 入门示例项目
- 扫描二维码可以在线查看示例
+ 扫描二维码可以在线查看示例  
 ![alt text](https://meibin08.github.io/react-redux/demo.png)
 
 ## 安装依赖包
