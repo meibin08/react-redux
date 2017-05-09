@@ -13,10 +13,10 @@ var config = {
   },
 
   output: {
-    path: __dirname + '/',
-    filename: ''+mipublic+'js/[name].js',
-    chunkFilename: ''+mipublic+'js/[name].[chunkhash:8].js',
-    publicPath: '/redux/'
+    path: __dirname + '/assets',
+    filename: 'js/[name].js',
+    chunkFilename: 'js/[name].[chunkhash:8].js',
+    publicPath: '/react-redux/'
   },
   
   plugins: [
@@ -29,7 +29,7 @@ var config = {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.NoErrorsPlugin(),
-    new ExtractTextPlugin(''+mipublic+'css/[name].[chunkhash:8].css'),
+    new ExtractTextPlugin('css/[name].[chunkhash:8].css'),
   ],
 
   resolve: {
@@ -48,11 +48,11 @@ var config = {
       // { test: /\.scss$/i, loader: ExtractTextPlugin.extract('style','css?sourceMap&modules&importLoaders=1&localI‌​dentName=[name]__[local]___[hash:base64:5]!sass?sourceMap') },
       {
         test: /\.(woff|woff2|ttf|eot|svg)$/,
-        loader: 'file-loader?name='+mipublic+'fonts/[name].[hash:8].[ext]'
+        loader: 'file-loader?name=fonts/[name].[hash:8].[ext]'
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
-        loader: 'url-loader?limit=8192&name='+mipublic+'images/[name].[hash:8].[ext]'
+        loader: 'url-loader?limit=8192&name=images/[name].[hash:8].[ext]'
       }
     ]
   }

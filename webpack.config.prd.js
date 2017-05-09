@@ -28,11 +28,11 @@ config.plugins.push(new webpack.optimize.UglifyJsPlugin({
     comments: false,
   }
 }));
-/*config.plugins.push(new HtmlWebPackPlugin({
-  filename: path.resolve(__dirname, 'index.html'),
+config.plugins.push(new HtmlWebPackPlugin({
+  filename: path.resolve(__dirname, 'assets/index.html'),
   template: "views/index.html",
   inject: true
-}));*/
+}));
 
 
 module.exports = config;
