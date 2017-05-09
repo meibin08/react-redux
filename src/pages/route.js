@@ -7,7 +7,7 @@ import Store from "src/store";
 import bridge from 'src/utils/bridge'
 
 const rootRoute = {
-  path: 'redux',
+  path: '/',
   component: require('../components/app/App'),
   childRoutes: [
     require('./Home/route'),
@@ -24,14 +24,15 @@ const rootRoute = {
       // onEnter: () => bridge.doAction('setWechat')
     }
   ],
-  indexRoute:{ onEnter: (nextState, replace) => replace('/redux/home') }, //默认重定向到->首页
+  indexRoute:{ onEnter: (nextState, replace) => replace('/home') }, //默认重定向到->首页
 };
 function Basename(history, dirname) {
   return useBasename(() => history)({ basename: `/${dirname}` });
 };
+    // <Router routes={rootRoute} history={hashHistory} />
 ReactDOM.render(
   <Provider store={Store}>
-    <Router routes={rootRoute} history={Basename(browserHistory,'react-redux')} />
+    <Router routes={rootRoute} history={Basename(hashHistory,'redux')} />
   </Provider>,
   document.getElementById('app')
 );

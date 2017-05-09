@@ -5,22 +5,22 @@
 		{
 			"name":"基础介绍",
 			"id":"01",
-			"href":"/redux/intro"
+			"href":"/intro"
 		},
 		{
 			"name":"异步加载",
 			"id":"03",
-			"href":"/redux/home/async"
+			"href":"/home/async"
 		},
 		{
 			"name":"列表展示",
 			"id":"03",
-			"href":"/redux/home/list"
+			"href":"/home/list"
 		},
 		{
 			"name":"增删操作",
 			"id":"04",
-			"href":"/redux/handler"
+			"href":"/handler"
 		} 
 	]
 }

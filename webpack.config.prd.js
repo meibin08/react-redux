@@ -31,7 +31,7 @@ config.plugins.push(new webpack.optimize.UglifyJsPlugin({
 config.plugins.push(new HtmlWebPackPlugin({
   filename: path.resolve(__dirname, 'assets/index.html'),
   template: "views/index.html",
-  inject: true
+  inject: false
 }));
 
 
