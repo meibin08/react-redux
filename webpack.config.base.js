@@ -36,8 +36,12 @@ var config = {
     extensions: ['', '.js', '.jsx', '.scss','.json'],
     alias: {
       src : __dirname + '/src',
-    }
+    },
+    root: [
+      path.join(__dirname, 'node_modules'),
+    ],
   },
+
 
   module: {
     loaders: [
@@ -55,7 +59,12 @@ var config = {
         loader: 'url-loader?limit=8192&name=images/[name].[hash:8].[ext]'
       }
     ]
-  }
+  },
+  resolveLoader: {
+    root: [
+      path.join(__dirname, 'node_modules'),
+    ],
+  },
 }
 
 module.exports = config;

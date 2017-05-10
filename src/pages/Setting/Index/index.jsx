@@ -9,7 +9,7 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import classnames from 'classnames';
 import { Link ,browserHistory } from 'react-router';
-import {Panel,Modal,Button,Icon,Cell,Input} from 'dragon-mobile-ui';
+import {Panel,Modal,Button,Icon,Cell,Input,Switch} from 'dragon-mobile-ui';
 import { fetchJson } from 'src/utils/fetch';
 import StaticToast from 'src/components/common/Toast';
 import format from "src/utils/format";
@@ -37,7 +37,23 @@ class Setting extends Component{
 		
 		return ( 
 			<section className="i-setting">
-				<Cell title="个人资料" type="link"/>
+				<div className="cell-page">
+					<Cell title="个人资料" type="link"/>
+				</div>
+				<div className="cell-page">
+					<Cell title="开放定位" type="link"/>
+					<Cell title="附近好友" type="link"/>
+					<Cell title="接收消息" type="link"/>
+				</div>
+				<div className="cell-page">
+					<Cell title="邀请好友" type="link"/>
+					<Cell title="关于众安" type="link"/>
+				</div>
+				<div className="cell-page">
+					<Cell className="log-out" title="退出登录"/>
+				</div>
+				<div></div>
+
 			</section>
 		);
 	}

@@ -20,6 +20,7 @@ let bridge = {
         } else {
           document.title = extra.title;
         }
+        document.body.className = extra.class||"f3f2f7";
         break;
       case 'setWechat':
         if (isFromWeixin()) {

@@ -32,7 +32,7 @@ module.exports = {
 				cb(null, require('./Index'));
 			});
 		},
-		onEnter: () => bridge.doAction('setTitle', { title: 'redux-首页' })
+		onEnter: () => bridge.doAction('setTitle', { title: 'redux-首页' ,class:"fff"})
 		// onEnter: () => bridge.doAction('setWechat')
 	}
 }

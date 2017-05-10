@@ -2,5 +2,17 @@
 
 
 .i-setting{
-	
+	.cell-page{
+		margin:r(15) 0 0;
+		padding:r(1) 0;
+		@include border($top:1, $right:0, $bottom:1, $left:0);
+		.log-out{
+			.ui-cell-title{
+				color:#e93a3a;
+				width:100%;
+				text-align: center;
+
+			}
+		}
+	}
 }
