@@ -21,6 +21,10 @@
 			"name":"增删操作",
 			"id":"04",
 			"href":"/handler"
+		},{
+			"name":"权限设置",
+			"id":"04",
+			"href":"/setting"
 		} 
 	]
 }
