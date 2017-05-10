@@ -29,6 +29,7 @@ class Start extends Component{
 		let {_transition,ACTIONS,_hideStart,_opacity}=this.props;
 		return (
 			<section className={classnames("i-start",{"hide":_hideStart})} style={{opacity:_opacity}} >
+				<p style={{display:"none"}}><img src={require('./images/a1.jpg')} alt=""/></p>
 				<div className="page-content">
 					<div className="m-mask">
 					{
@@ -38,11 +39,11 @@ class Start extends Component{
 					}
 
 						<div className="mask-img">
-							<div className="front"></div>
+							<div className="front" style={{backgroundImage:"url("+`${require('./images/a1.jpg')}`+")"}}></div>
 							{
 							_transition.map((item,i)=>{
 								return (
-									<div key={'touch'+i} className={classnames({"touch":(i<3),"back":(i>2),[`th${(i+1)}`]:true})} style={{"WebkitMaskPosition":item.maskPosition}}></div>
+									<div key={'touch'+i} className={classnames({"touch":(i<3),"back":(i>2),[`th${(i+1)}`]:true})} style={{backgroundImage:"url("+`${require('./images/bg.jpg')}`+")",WebkitMaskPosition:item.maskPosition}}></div>
 								);
 							})
 							}

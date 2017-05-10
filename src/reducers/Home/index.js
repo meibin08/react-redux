@@ -4,6 +4,7 @@ import {HOME_INIT,WAVE_DATA} from "src/constants/Home";
 let initStates = {
 	classList:[],
 	wave:[],
+	loadOver:false,//加载完成
 };
 function home(state = initStates,action){
 	switch(action.type){
@@ -16,11 +17,13 @@ function home(state = initStates,action){
 
 		case WAVE_DATA:
 			console.log("reducers=16",action.data);
+			let loadOver = true;
 			return Object.assign({},state,{
 				wave:[
 					...state.wave,
 					...action.data
-				]
+				],
+				loadOver
 			});
 		default:
 			return state;

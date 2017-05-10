@@ -41,42 +41,44 @@ class Home extends Component{
 		ACTIONS.wave();
 	}
 	render(){
-		let {_wave,_classList} = this.props;
+		let {_wave,_classList,_loadOver} = this.props;
 		return ( 
 			<section className="i-home">
-				<div className="user-info">
-		          <div className="user-icon"><img src={require('./images/logo.svg')}></img></div>
-		          <div className="user-name"><p>React+Redux</p></div>
-		          <div className="user-identity">
-		          	<div className="inner"> 从入门到崩溃、放弃至删代码跑路</div>
-		          </div>
-		          <div className="wave">
-		          {
-		          _wave.map((item,i)=>{
-		          	return (
-		          		<img key={"_wave"+i} className={item._class} src={require(`${item.url}`)} alt={item._alt} />
-		          	);
-		          })
-		          }
-		          </div>
-		      </div>
-				<div className="icon-items">
-				{
-				_classList.map((item,i)=>{
-					return (
-						<div className="item" key={"icon"+i}>
-		            		<Link to={item.href}>
-			            		<div className="icon">
-			            			<SVGICON />
-			            		</div>
-			            		<p>{item.name}</p>
-		            		</Link>
-		            	</div>
-					);
-				})
-				}
-				</div>
 				{(store.get(StorageKey)&&store.get(StorageKey)==1)?null:(<Start/>)}
+				<div className={classnames("i-content",{"hide":!_loadOver})}>
+					<div className="user-info">
+			          <div className="user-icon"><img src={require('./images/logo.svg')}></img></div>
+			          <div className="user-name"><p>React+Redux</p></div>
+			          <div className="user-identity">
+			          	<div className="inner"> 从入门到崩溃、放弃至删代码跑路</div>
+			          </div>
+			          <div className="wave">
+			          {
+			          _wave.map((item,i)=>{
+			          	return (
+			          		<img key={"_wave"+i} className={item._class} src={require(`${item.url}`)} alt={item._alt} />
+			          	);
+			          })
+			          }
+			          </div>
+			      </div>
+					<div className="icon-items">
+					{
+					_classList.map((item,i)=>{
+						return (
+							<div className="item" key={"icon"+i}>
+			            		<Link to={item.href}>
+				            		<div className="icon">
+				            			<SVGICON />
+				            		</div>
+				            		<p>{item.name}</p>
+			            		</Link>
+			            	</div>
+						);
+					})
+					}
+					</div>
+				</div>
 			</section>
 		);
 	}
@@ -89,10 +91,11 @@ const SVGICON = (props)=>(
 );
 function mapStateToProps(state){
 	// console.log(state)
-	const {homeIndex} = state;//
+	const {classList,wave,loadOver} = state.homeIndex;//
 	return {
-		_classList:homeIndex.classList,
-		_wave:homeIndex.wave,
+		_classList:classList,
+		_wave:wave,
+		_loadOver:loadOver
 	};
 }; 
 
