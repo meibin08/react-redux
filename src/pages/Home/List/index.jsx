@@ -28,7 +28,7 @@ class List extends Component{
 
 	render(){
 		return ( 
-			<section className="i-home">
+			<section className="i-list">
 				<br/>
 				<br/>
 				<br/>

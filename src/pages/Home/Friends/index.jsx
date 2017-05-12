@@ -19,7 +19,7 @@ import Empty from 'src/components/common/Empty';
 import './Index.scss';
 
 
-class List extends Component{
+class Friends extends Component{
 	constructor(props){
 		super(props);
     	this.state = {
@@ -50,4 +50,4 @@ function mapDispatchToProps(dispatch){
 		ACTIONS:bindActionCreators(actions,dispatch)
 	};
 };
-export default  connect(mapStateToProps,mapDispatchToProps)(List);
+export default  connect(mapStateToProps,mapDispatchToProps)(Friends);

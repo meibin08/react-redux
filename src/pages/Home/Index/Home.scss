@@ -86,14 +86,14 @@
 	.icon-items{
 		display: -webkit-flex; 
         -webkit-flex-wrap:wrap;
-        -webkit-justify-content:space-between;
+        // -webkit-justify-content:space-between;
         -webkit-align-content:space-between;
         position:relative;
         z-index: 2;
         height: auto;
         .item {
             text-align: center;
-            -webkit-flex-basis: r(120);
+            -webkit-flex-basis: r(125);
             margin:0 0 r(20);
             a{display:block;}
             div.icon{

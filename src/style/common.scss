@@ -87,3 +87,7 @@ h2,h3,h4,h5,h6{font-weight: normal;}
   background-color:#fefefe;
   @include borderBottom($color:#e6e6e6);
 }
+.ui-switch.checked{
+    border: 1px solid #117d90;
+    background-color: #117d90;
+}

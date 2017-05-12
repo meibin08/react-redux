@@ -33,7 +33,7 @@
     "babel-runtime": "^6.0.0",
     "classnames": "^2.2.5",
     "css-loader": "^0.23.1",
-    "dragon-mobile-ui": "0.0.32",
+    "dragon-mobile-ui": "0.0.40",
     "es6-promise": "^3.2.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "fastclick": "^1.0.6",

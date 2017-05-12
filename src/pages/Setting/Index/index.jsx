@@ -41,9 +41,9 @@ class Setting extends Component{
 					<Cell title="个人资料" type="link"/>
 				</div>
 				<div className="cell-page">
-					<Cell title="开放定位" type="link"/>
-					<Cell title="附近好友" type="link"/>
-					<Cell title="接收消息" type="link"/>
+					<Cell title="开放定位"  description={<Switch theme="success" onChange={(v)=>{console.log(v)}}/>}/>
+					<Cell title="附近好友"  description={<Switch theme="success" onChange={(v)=>{console.log(v)}}/>}/>
+					<Cell title="接收消息"  description={<Switch theme="success" onChange={(v)=>{console.log(v)}}/>}/>
 				</div>
 				<div className="cell-page">
 					<Cell title="邀请好友" type="link"/>
@@ -52,8 +52,7 @@ class Setting extends Component{
 				<div className="cell-page">
 					<Cell className="log-out" title="退出登录"/>
 				</div>
-				<div></div>
-
+				<Switch />
 			</section>
 		);
 	}
@@ -66,7 +65,7 @@ const SVGICON = (props)=>(
 );
 function mapStateToProps(state){
 	// console.log(state)
-	const {classList,wave,loadOver} = state.homeIndex;//
+	const {classList,wave,loadOver} = state.homeIndex;
 	return {};
 }; 
 

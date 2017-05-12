@@ -8,9 +8,9 @@
 			"href":"/intro"
 		},
 		{
-			"name":"异步加载",
+			"name":"附近好友",
 			"id":"03",
-			"href":"/home/async"
+			"href":"/home/friends"
 		},
 		{
 			"name":"列表展示",

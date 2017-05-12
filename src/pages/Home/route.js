@@ -17,13 +17,13 @@ module.exports = {
 			},
 			onEnter: () => bridge.doAction('setTitle', { title: '列表展示' })
 		},{
-			path: 'async',
+			path: 'friends',
 			getComponent(location, cb) {
 				require.ensure([], (require) => {
-					cb(null, require('./Async'));
+					cb(null, require('./Friends'));
 				});
 			},
-			onEnter: () => bridge.doAction('setTitle', { title: '异步加载数据' })
+			onEnter: () => bridge.doAction('setTitle', { title: '附近好友' })
 		}
 	],
 	indexRoute: {
