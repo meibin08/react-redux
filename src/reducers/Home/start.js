@@ -70,7 +70,7 @@ function start(state = initStates,action){
 
 		case SHADOW_TRANSITION:
 
-			let opacity = ( state.opacity-(Reflect.has(action.data, 'opacity') ? (action.data.opacity/10):0) );
+			let opacity = ( state.opacity-(action.data.hasOwnProperty('opacity') ? (action.data.opacity/10):0) );
 
 			return Object.assign({},state,{
 				transition:state.transition.map((item)=>{
