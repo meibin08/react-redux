@@ -52,7 +52,6 @@ class Setting extends Component{
 				<div className="cell-page">
 					<Cell className="log-out" title="退出登录"/>
 				</div>
-				<Switch />
 			</section>
 		);
 	}

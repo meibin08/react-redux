@@ -7,12 +7,13 @@
 
 import homeIndex from "./Home/index";
 import homeStart from "./Home/start";
+import homeFriends from "./Home/friends";
 import introIndex from "./Intro/index";
 import handlerIndex from "./Handler/index";
 
 let actions = Object.assign({},
 	homeIndex,
-	homeStart,
+	homeStart,homeFriends,
 	introIndex,
 	handlerIndex
 	);

@@ -5,6 +5,7 @@
  */
 import bridge from 'src/utils/bridge';
 
+
 module.exports = {
 	path: 'home',
 	childRoutes: [
