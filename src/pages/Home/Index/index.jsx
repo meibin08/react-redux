@@ -56,12 +56,12 @@ class Home extends Component{
 			          {
 			          _wave.map((item,i)=>{
 			          	return (
-			          		<img key={"_wave"+i} className={item._class} src={require(`${item.url}`)} alt={item._alt} />
+			          		<img key={"_wave"+i} className={item._class} src={(i<2?require('./images/b.png'):require('./images/a.png'))} alt={item._alt} />
 			          	);
 			          })
 			          }
 			          </div>
-			      </div>
+			      	</div>
 					<div className="icon-items">
 					{
 					_classList.map((item,i)=>{
