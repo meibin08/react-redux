@@ -21,7 +21,7 @@ module.exports = {
 			path: 'friends',
 			getComponent(location, cb) {
 				require.ensure([], (require) => {
-					cb(null, require('./Friends'));
+					//cb(null, require('./Friends'));
 				});
 			},
 			onEnter: () => bridge.doAction('setTitle', { title: '附近好友' })
