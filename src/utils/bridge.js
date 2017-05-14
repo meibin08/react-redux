@@ -1,6 +1,6 @@
 import { browserHistory } from 'react-router'
 import { isFromWeixin,isIos } from 'src/utils/validate';
-import Wechat from 'src/plugins/Wechat';//微信初始化相关配置页
+// import Wechat from 'src/plugins/Wechat';//微信初始化相关配置页
 
 let bridge = {
   goWebView: (url) => {
@@ -20,11 +20,11 @@ let bridge = {
         } else {
           document.title = extra.title;
         }
-        document.body.className = extra.class||"f3f2f7";
+        //document.body.className = extra.class||"f3f2f7";
         break;
       case 'setWechat':
         if (isFromWeixin()) {
-          Wechat.config();
+          // Wechat.config();
         };
         break;
       default:

@@ -13,7 +13,7 @@ const rootRoute = {
     require('./Home/route'),
     require('./Intro/route'),
     require('./Handler/route'),
-    // require('./Setting/route'),
+    require('./Setting/route'),
     {
       path: '*',
       getComponent(location, cb) {
