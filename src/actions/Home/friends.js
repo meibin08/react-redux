@@ -28,7 +28,7 @@ let friends =  {
 						type:FRIENDS_LOCATION,
 						data:res.position
 					});
-					opt.success&&opt.success(res);
+					options.success&&options.success(res);
 				}
 			};
 			aMap.getLocation(opt);
