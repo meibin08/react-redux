@@ -21,7 +21,7 @@ import Start from "../Start";
 import './Home.scss';
 
 
-let store = new Storage(),
+let stores = new Storage(),
 	StorageKey = 'hideStart';
 
 class Home extends Component{
@@ -44,7 +44,7 @@ class Home extends Component{
 		let {_wave,_classList,_loadOver} = this.props;
 		return ( 
 			<section className="i-home">
-				{(store.get(StorageKey)&&store.get(StorageKey)==1)?null:(<Start/>)}
+				{(stores.get(StorageKey)&&stores.get(StorageKey)==1)?null:(<Start/>)}
 				<div className={classnames("i-content",{"hide":!_loadOver})}>
 					<div className="user-info">
 			          <div className="user-icon"><img src={require('./images/logo.svg')}></img></div>

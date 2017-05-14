@@ -14,7 +14,6 @@ import { fetchJson } from 'src/utils/fetch';
 import StaticToast from 'src/components/common/Toast';
 import format from "src/utils/format";
 import dia from "src/utils/dia";
-import Storage from 'src/utils/storage';
 import actions from "src/actions";
 import './Index.scss';
 

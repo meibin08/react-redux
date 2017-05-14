@@ -10,7 +10,7 @@ import StaticToast from 'src/components/common/Toast';
 import {SHADOW_TRANSITION,HIDE_START} from "src/constants/Home/start";
 import Storage from 'src/utils/storage';
 
-let store = new Storage(),
+let stores = new Storage(),
 	StorageKey = 'hideStart';
 
 let transitionAnimate = (options,fn1,fn2)=>{
@@ -69,7 +69,7 @@ let start =  {
 							dispatch({
 								type:HIDE_START
 							});
-							store.set(StorageKey,true,45);
+							stores.set(StorageKey,true,45);
 						},400);
 					});
 				};
