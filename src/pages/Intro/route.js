@@ -15,6 +15,6 @@ module.exports = {
 				cb(null, require('./Index'));
 			});
 		},
-		onEnter: () => bridge.doAction('setTitle', { title: 'redux-基础介绍' });
+		onEnter: () => bridge.doAction('setTitle', { title: 'redux-基础介绍' })
 	}
 }
