@@ -1,9 +1,10 @@
 
-import {SHADOW_TRANSITION,HIDE_START} from "src/constants/Home/start";
+import {SHADOW_TRANSITION,HIDE_START,LOADOVER} from "src/constants/Home/start";
 
 let initStates = {
 	hideStart:false,
 	opacity:1,
+	loadOver:false,//加载完成
 	transition:[
 		{
 			id:"01",
@@ -68,6 +69,9 @@ let initStates = {
 function start(state = initStates,action){
 	switch(action.type){
 
+		case LOADOVER:
+			let loadOver = true;
+			return Object.assign({},state,{loadOver});
 		case SHADOW_TRANSITION:
 
 			let opacity = ( state.opacity-(action.data.hasOwnProperty('opacity') ? (action.data.opacity/10):0) );

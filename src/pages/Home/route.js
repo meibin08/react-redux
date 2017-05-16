@@ -16,7 +16,7 @@ module.exports = {
 					cb(null, require('./List'));
 				});
 			},
-			onEnter: () => bridge.doAction('setTitle', { title: '列表展示' })
+			onEnter: () => bridge.doAction('setTitle', { title: '列表展示',class:"f2f2f2" })
 		},{
 			path: 'friends',
 			getComponent(location, cb) {
@@ -33,7 +33,7 @@ module.exports = {
 				cb(null, require('./Index'));
 			});
 		},
-		onEnter: () => bridge.doAction('setTitle', { title: 'redux-首页'})
+		onEnter: () => bridge.doAction('setTitle', { title: 'redux-首页',class:"fff"})
 		// onEnter: () => bridge.doAction('setWechat')
 	}
 }

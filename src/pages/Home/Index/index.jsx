@@ -45,7 +45,7 @@ class Home extends Component{
 		return ( 
 			<section className="i-home">
 				{(stores.get(StorageKey)&&stores.get(StorageKey)==1)?null:(<Start/>)}
-				<div className={classnames("i-content",{"hide":!_loadOver})}>
+				<div className={classnames("i-content",{"hide":stores.get(StorageKey)!=1&&!_loadOver})}>
 					<div className="user-info">
 			          <div className="user-icon"><img src={require('./images/logo.svg')}></img></div>
 			          <div className="user-name"><p>React+Redux</p></div>
@@ -90,8 +90,9 @@ const SVGICON = (props)=>(
 	</svg>
 );
 function mapStateToProps(state){
-	// console.log(state)
-	const {classList,wave,loadOver} = state.homeIndex;//
+	console.log(state)
+	const {classList,wave} = state.homeIndex;//
+	const {loadOver} = state.homeStart;//
 	return {
 		_classList:classList,
 		_wave:wave,

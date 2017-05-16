@@ -7,7 +7,7 @@
 import { fetchJson } from 'src/utils/fetch';
 import { browserHistory } from 'react-router';
 import StaticToast from 'src/components/common/Toast';
-import {SHADOW_TRANSITION,HIDE_START} from "src/constants/Home/start";
+import {SHADOW_TRANSITION,HIDE_START,LOADOVER} from "src/constants/Home/start";
 import Storage from 'src/utils/storage';
 
 let stores = new Storage(),
@@ -51,7 +51,12 @@ let start =  {
 				});
 			},(itemRes)=>{
 				start.touchNum+=1;
-				if(start.touchNum>=3){
+				//第一次动画完成后，显示主页内容
+				if(start.touchNum<2){
+					dispatch({
+						type:LOADOVER
+					});
+				}else if(start.touchNum>=3){
 					transitionAnimate(lastItem.options,(val,num)=>{
 						let {endNum} = lastItem.options;
 
