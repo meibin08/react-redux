@@ -1,0 +1,30 @@
+{
+	"code": 0,
+	"message": "ok",
+	"result":[
+		{
+			"name":"基础介绍",
+			"id":"01",
+			"href":"/intro"
+		},
+		{
+			"name":"附近好友",
+			"id":"03",
+			"href":"/home/friends"
+		},
+		{
+			"name":"列表展示",
+			"id":"03",
+			"href":"/home/list"
+		},
+		{
+			"name":"增删操作",
+			"id":"04",
+			"href":"/handler"
+		},{
+			"name":"权限设置",
+			"id":"05",
+			"href":"/setting"
+		} 
+	]
+}
