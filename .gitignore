@@ -6,7 +6,7 @@ logs
 src
 views
 Dockerfile
-*.md
+
 coverage
 _book
 .idea
