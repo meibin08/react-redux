@@ -18,7 +18,6 @@ function home(state = initStates,action){
 			console.log("reducers=16",action.data);
 			return Object.assign({},state,{
 				wave:[
-					...state.wave,
 					...action.data
 				]
 			});
