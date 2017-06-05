@@ -15,7 +15,7 @@
 - npm start
 - 访问http://localhost/#/
 
-##要点
+## 要点
 
 - 简单的react、redux 的入门，
 - 主要分析项目目录的结构划分规化，
