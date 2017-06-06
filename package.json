@@ -6,9 +6,28 @@
   "scripts": {
     "start": "node app.js",
     "dev": "node devServer.js",
-    "update": "npm update dragon-mobile-ui",
     "build": "rm -rf assets && webpack --config webpack.config.prd.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meibin08/react-redux.git"
+  },
+  "files": [
+    "lib",
+    "src",
+    "es"
+  ],
+  "keywords": [
+    "react",
+    "reactjs",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "redux-thunk",
+    "redux"
+  ],
   "dependencies": {
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
@@ -60,6 +79,6 @@
     "react-redux": "^4.0.0",
     "redux-thunk": "^1.0.3"
   },
-  "author": "BinMei <meibin08@163.com>",
+  "author": "Bin.Mei <meibin08@163.com>,QQ群:386485473",
   "license": "MIT"
 }
