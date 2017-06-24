@@ -3,6 +3,7 @@
 node_modules
 assets
 lib
+log
 assets
 coverage
 _book
