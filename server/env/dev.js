@@ -3,7 +3,7 @@ module.exports = {
   API : {
 
   	jsonApi: {
-      host: 'dev.zhongan.com',
+      host: 'dev.meibi08.com',
       port: 80
     },
   }
