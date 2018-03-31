@@ -1,6 +1,6 @@
 @import "src/style/index";
 
-@-webkit-keyframes rotate{
+@keyframes rotate{
     to{
         -webkit-transform: rotateZ(360deg);
     };
@@ -14,8 +14,8 @@
         padding-left:r(36);
         display:flex;
         display:-webkit-flex;
-        display:box;
-        display:-webkit-box;
+        // display:box;
+        // display:-webkit-box;
         overflow:hidden;
         .message{
             margin:r(30) r(24) 0 0;

@@ -1,28 +1,10 @@
 @import "./variables";
+@import "./func";
 
-@mixin color-96 {
-  color:#999696;
-}
-@mixin color-f6 {
-  color:#f66;
-}
-@mixin color-66 {
-  color:#666464;
-}
-@mixin ellipsis{
-  white-space: nowrap;text-overflow: ellipsis;overflow:hidden;
-}
-@mixin box($pack: center, $align: center) {
-    display: box;
-    display: -webkit-box;
-    box-pack: $pack;
-    box-align: $align;
-    -webkit-box-pack: $pack;
-    -webkit-box-align: $align;
-}
+
 .ds-box{
-    display:-webkit-box;
-    display:box;
+    display:-webkit-flex;
+    display:flex;
 }
 
 .hide{display:none;}
@@ -39,8 +21,8 @@
   background-color: #f66;
 }
 .cm-flex{
-  -webkit-box-flex: 1;
-  box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
 }
 h2,h3,h4,h5,h6{font-weight: normal;}
 

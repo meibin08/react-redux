@@ -90,7 +90,7 @@ const SVGICON = (props)=>(
 	</svg>
 );
 function mapStateToProps(state){
-	console.log(state)
+	// console.log(state)
 	const {classList,wave} = state.homeIndex;//
 	const {loadOver} = state.homeStart;//
 	return {

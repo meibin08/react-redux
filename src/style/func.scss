@@ -95,9 +95,22 @@
   }
 }
 
+
+@mixin color-96 {
+  color:#999696;
+}
+@mixin color-f6 {
+  color:#f66;
+}
+@mixin color-66 {
+  color:#666464;
+}
+@mixin ellipsis{
+  white-space: nowrap;text-overflow: ellipsis;overflow:hidden;
+}
 @mixin box($pack: center, $align: center) {
-    display: box;
-    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
     box-pack: $pack;
     box-align: $align;
     -webkit-box-pack: $pack;

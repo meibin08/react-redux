@@ -50,7 +50,7 @@ class Index extends Component{
 					{
 					_introList.map((item,index)=>{
 						return (
-							<section id={item.id} className={classnames("faq-row",{"active":item.status})} key={item.id}>
+							<section id={item.id} className={classnames("faq-row",{"active":item.status})} key={"abc"+item.id}>
 								<Cell type="link" title={item.title} onClick={()=>ACTIONS.toggle(item.id)} icon={<SVG herf={require('./images/icon.svg')+"#svg-contact1"} />} />
 								<ul className="row-list">
 									{
@@ -80,7 +80,7 @@ const SVG=(props)=>(
 	</svg>
 );
 function mapStateToProps(state){
-	console.log(state);
+	// console.log(state);
 	const {introIndex} = state;//
 	return {
 		_introList:introIndex.introList

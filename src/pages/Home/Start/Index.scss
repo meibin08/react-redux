@@ -1,12 +1,12 @@
 @import "src/style/index";
 
-@-webkit-keyframes dot{
+@keyframes dot{
 	to{
 		-webkit-transform:scale(2);
 		opacity:0;
 	}
 }
-@-webkit-keyframes trHide{
+@keyframes trHide{
 	0%{
 		opacity:1;
 	}
