@@ -1,5 +1,8 @@
 assets
 .DS_Store
+.cache
+package-lock.json
+*.log
 node_modules
 bin
 logs
