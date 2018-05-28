@@ -28,7 +28,8 @@
     "live",
     "edit",
     "redux-thunk",
-    "redux"
+    "redux",
+    "前端","React.js小书","教程","node.js","JavaScript 库","webpack","ES6","express","构建用户界面","组件化","入门教程"
   ],
   "dependencies": {
     "compression": "^1.6.2",
