@@ -12,7 +12,7 @@
 
 ## 开发环境
 - npm run dev
-- 访问http://localhost/#/
+- 访问http://localhost:9081/#/
 
 ## 生成环境
 - npm run build
