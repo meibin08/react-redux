@@ -20,15 +20,15 @@
 - 访问http://localhost/#/
 
 ## 要点
-
 - 简单的react、redux 的入门，
 - 主要分析项目目录的结构划分规化，
 - 结合工作实际项目的情况进行模块划分、多人协作等的开发拓展，
 - Redux 数据的初始化、更新、添加、删除、异步加载等操作
 
+## React\redux技术交流群
+- 群：[386485473](https://shang.qq.com/wpa/qunwpa?idkey=d44baf17512787eb0e4f268849a3239d6b9675145a606e21b9a055176bd1c0e2 "React\redux技术交流群")
 
 ## 还可以打赏哦～ 
-
 - 如果觉得此示例对你有帮助，可以打赏我一点小费哦～ ^_^ ～
 - 
 ![苏南, 前端,热爱前端开发,5年前端开发工作经验,meibin08@163.com,react爱好者，业余时间爱写一些自己感兴趣的东西，实践自己所想,爱好:跑步、音乐、爬山、看书、羽毛球等,'宝剑锋从磨砺出，梅花得自苦寒来'](https://meibin08.github.io/NeteaseCloudMusic-SSR/static/reward@x1.png?20180803)
