@@ -1,7 +1,7 @@
 {
   "name": "react-redux",
   "version": "1.0.1",
-  "description": "react redux Example",
+  "description": "react redux Example @IT·平头哥联盟-首席填坑官∙苏南",
   "main": "app.js",
   "scripts": {
     "start": "node build/app.js",
@@ -29,6 +29,8 @@
     "edit",
     "redux-thunk",
     "redux",
+    "首席填坑官∙苏南",
+    "@IT·平头哥联盟-首席填坑官∙苏南",
     "前端","React.js小书","教程","node.js","JavaScript 库","webpack","ES6","express","构建用户界面","组件化","入门教程"
   ],
   "dependencies": {
