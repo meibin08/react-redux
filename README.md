@@ -1,6 +1,6 @@
 # React + Redux Example  
- 入门示例项目  [@IT·平头哥联盟](https://honeybadger8.github.io/blog/ "@IT·平头哥联盟-首席填坑官∙苏南")
- `扫描二维码可以在线查看示例`  
+ 入门示例项目  
+ `扫描二维码可以在线查看示例`  ,了解更多？——[@IT·平头哥联盟](https://honeybadger8.github.io/blog/ "@IT·平头哥联盟-首席填坑官∙苏南")
 ![@IT·平头哥联盟,首席填坑官∙苏南,react redux 入门示例, NodeJS 版 react reactjs,redux,同构直出 示例,前端,React.js小书,教程,react,reactjs,node.js,JavaScript 库,webpack,ES6,express,构建用户界面,组件化,入门教程,redux,入门示例,demo](https://meibin08.github.io/react-redux/demo.png)
 
 ## 更新(2018-03-31)
